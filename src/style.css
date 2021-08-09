@@ -1,22 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat&display=swap');
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    font-family: 'Dancing Script', cursive;  
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(0,198,255);
+    background: linear-gradient(0deg, rgba(0,198,255,1) 0%, rgba(13,141,198,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 #content {
     display: block;
-    margin: 50px auto;
+    margin: 100px auto 100px auto;
     width: 50%;
     text-align: center;
+    background-color: #ffb204;
+    border-image-slice:123 147 157 123;
+    border-image-width:30px 30px 30px 30px;
+    border-image-outset:15px 15px 15px 15px;
+    border-image-repeat:stretch stretch;
+    border-image-source:url("https://pngimg.com/uploads/picture_frame/picture_frame_PNG114.png");
+    border-style:solid;
+    padding: 100px;
+    color: #0C486A;
 }
 
 #nav-ul {
     list-style-type: none;
     margin: 0 0 10px 0;
     padding: 0;
+    background-color: lightgreen;
+    border-bottom: 1px solid black;
     overflow: hidden;
-    background-color: lightgray;
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,10 +47,18 @@ body, html {
 }
 .nav-li {
     float: left;
-    border: 1px solid black;
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 10px 50px;
     display: block;
+    background-color: lightgreen;
+}
+.nav-li:hover {
     background-color: green;
+}
+
+
+.menuItem {
+    margin: 40px 0 40px 0;
+    padding: 10px 0;
 }

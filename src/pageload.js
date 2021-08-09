@@ -3,15 +3,16 @@ const homeLoad = () => {
     const contentDiv = document.querySelector("#content");
 
     let myImage = document.createElement("img");
-    myImage.src = "https://www.foodiecrush.com/wp-content/uploads/2017/09/My-Moms-Homemade-Spaghetti-and-Meat-Sauce-foodiecrush.com-017-683x1024-1.jpg";
+    myImage.src = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2018%2F02%2Fbarbuzzo-best-italian-restaurants-philly-FT-BLOG0218.jpg";
     myImage.alt = "Spaghetti on a plate";
     myImage.setAttribute("width", "400");
     myImage.setAttribute("height", "400");
 
     let topHeading = document.createElement("h1");
     topHeading.innerHTML = "Mama Mia's Italian Restaurante";
-
+    topHeading.classList.add('homeHead');
     let para1 = document.createElement("p");
+    para1.classList.add('homePara');
 
     para1.innerHTML = ("Welcome to our Restaurant's website! We serve only the finest Italian food, with ingredients sourced straight from Italy. You're going to love our dishes!");
 
@@ -78,8 +79,8 @@ const menuItem = (imgSrc, altText, menuHead, menuDesc) => {
     let itemPic = document.createElement("img");
     itemPic.src = imgSrc;
     itemPic.alt = altText;
-    itemPic.setAttribute("width", "400");
-    itemPic.setAttribute("height", "400");
+    itemPic.setAttribute("width", "300");
+    itemPic.setAttribute("height", "300");
 
     let itemHeading = document.createElement("h2");
     itemHeading.innerHTML = menuHead;
@@ -90,7 +91,7 @@ const menuItem = (imgSrc, altText, menuHead, menuDesc) => {
     itemDiv.appendChild(itemPic);
     itemDiv.appendChild(itemHeading);
     itemDiv.appendChild(itemDesc);
-
+    itemDiv.classList.add('menuItem');
     return itemDiv;
 }
 
