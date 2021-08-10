@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat&display=swap');
 body, html {
     margin: 0;
-    padding: 0;
-    height: 100%;
+    padding: 10px;
     font-family: 'Dancing Script', cursive;  
 }
 
@@ -18,6 +17,8 @@ body {
 }
 .imgHome {
    border-radius: 50%;
+   max-width: 400px;
+   max-height: 400px;
 }
 
 #content {
@@ -69,3 +70,15 @@ body {
 .imgHome {
     border: 5px solid black;
 }
+
+
+@media only screen and (max-width: 800px) {
+    .imgHome {
+        width: 200px;
+        height: 200px;
+    }
+    .menuImg {
+        width: 200px;
+        height: 200px;
+    }
+  }

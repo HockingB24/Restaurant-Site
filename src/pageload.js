@@ -71,7 +71,7 @@ const menuLoad = () => {
 
     contentDiv.appendChild(spaghetDiv);
     contentDiv.appendChild(lasagnaDiv);
-    content.appendChild(fettucineDiv);
+    contentDiv.appendChild(fettucineDiv);
 }
 
 const menuItem = (imgSrc, altText, menuHead, menuDesc) => {
