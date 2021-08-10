@@ -7,6 +7,7 @@ const homeLoad = () => {
     myImage.alt = "Spaghetti on a plate";
     myImage.setAttribute("width", "400");
     myImage.setAttribute("height", "400");
+    myImage.classList.add('imgHome');
 
     let topHeading = document.createElement("h1");
     topHeading.innerHTML = "Mama Mia's Italian Restaurante";
@@ -14,7 +15,7 @@ const homeLoad = () => {
     let para1 = document.createElement("p");
     para1.classList.add('homePara');
 
-    para1.innerHTML = ("Welcome to our Restaurant's website! We serve only the finest Italian food, with ingredients sourced straight from Italy. You're going to love our dishes!");
+    para1.innerHTML = ("Welcome to our restaurant's website! We serve only the finest Italian food, with ingredients sourced straight from Italy. You're going to love our dishes!");
 
 
 
@@ -46,6 +47,7 @@ const menuLoad = () => {
 
     //Item 1: Spaghetti
     let spgImg = "https://www.foodiecrush.com/wp-content/uploads/2017/09/My-Moms-Homemade-Spaghetti-and-Meat-Sauce-foodiecrush.com-017-683x1024-1.jpg";
+    //spgImg.classList.add('menuImg');
     let spgAltText = "Spaghetti with Meatballs"
     let spgHeading = 'Spaghetti with Meatballs';
     let spgDesc = "Spaghetti and Meatballs served with Pasta Sauce and Parmesan Cheese"
@@ -53,6 +55,7 @@ const menuLoad = () => {
 
     //Item 2: Lasagna
     let lsgImg = "https://www.jessicagavin.com/wp-content/uploads/2017/07/meat-lasagna-1200.jpg";
+    //lsgImg.classList.add('menuImg');
     let lsgAltText = "Lasagna";
     let lsgHeading = "Lasagna with Ground Beef";
     let lsgDesc = "Lasagna served with Ground Beef and Italian Sausage on the inside"
@@ -60,6 +63,7 @@ const menuLoad = () => {
 
     //Item 3: Fettucine Alfredo
     let fetImg = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8135663.jpg";
+    //fetImg.classList.add('menuImg');
     let fetAltText = "Fettucine Alfredo";
     let fetHeading = "Fettucine Alfredo";
     let fetDesc = "Dish of fettucine served in a sauce of cream, butter, and Parmesan cheese";
@@ -81,6 +85,7 @@ const menuItem = (imgSrc, altText, menuHead, menuDesc) => {
     itemPic.alt = altText;
     itemPic.setAttribute("width", "300");
     itemPic.setAttribute("height", "300");
+    itemPic.classList.add('menuImg');
 
     let itemHeading = document.createElement("h2");
     itemHeading.innerHTML = menuHead;
