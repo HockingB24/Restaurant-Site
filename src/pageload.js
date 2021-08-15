@@ -10,7 +10,7 @@ const homeLoad = () => {
     myImage.classList.add('imgHome');
 
     let topHeading = document.createElement("h1");
-    topHeading.innerHTML = "Mama Mia's Italian Restaurante";
+    topHeading.innerHTML = "Mama Mia's Ristorante Italiano";
     topHeading.classList.add('homeHead');
     let para1 = document.createElement("p");
     para1.classList.add('homePara');
